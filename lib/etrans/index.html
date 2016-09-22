@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>电子跃迁效果</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0,user-scalable=no" />
+  <meta name="apple-touch-fullscreen" content="yes" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  <meta name="author" content="miclay" />
+  <style>
+  body{background: #1c1c1c}
+  .sys-box{
+    position:relative; width:960px; height:540px;
+    background:url(images/bg.png) center no-repeat;
+    background-size: 200%;
+  }
+  .etrans{
+    position:absolute; top:0; left:210px;
+    background-size: 170%;
+    background-repeat:no-repeat;
+    background-position:center;
+  }
+  #sys-1{
+    background-image:url(images/bg-1.png);
+  }
+  #sys-2{
+    background-image:url(images/bg-2.png);
+  }
+  #sys-3{
+    background-image:url(images/bg-3.png);
+  }
+  #sys-4{
+    background-image:url(images/bg-4.png);
+  }
+  #sys-5{
+    background-image:url(images/bg-5.png);
+  }
+  </style>
+</head>
+<body>
+  <div class="sys-box">
+    <canvas id="sys-1" class="etrans" >您的浏览器不支持该技术</canvas>
+    <canvas id="sys-2" class="etrans" >您的浏览器不支持该技术</canvas>
+    <canvas id="sys-3" class="etrans" >您的浏览器不支持该技术</canvas>
+    <canvas id="sys-4" class="etrans" >您的浏览器不支持该技术</canvas>
+    <canvas id="sys-5" class="etrans" >您的浏览器不支持该技术</canvas>
+  </div>
+  <script src="define.js"></script>
+  <script src="particle.js"></script>
+  <script src="light.js"></script>
+  <script src="etrans.js"></script>
+  <script src="index.js"></script>
+</body>
+</html>

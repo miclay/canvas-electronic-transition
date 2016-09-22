@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>气泡随机涌现效果</title>
+  <style>
+    html{height:100%;}
+    body{
+      background:#0c0c0c; height:100%; margin:0;
+    }
+    .outer{
+      position:relative; width:1920px; height:1080px;
+    }
+    .sys{
+      width:1000px; height:1000px; margin-left:50%; position:absolute; left:-500px; top:40px;
+    }
+    .sys{
+      background:url(images/bg.png) center no-repeat!important;
+      background-size:90%!important;
+    }
+    #container-1{
+      
+    }
+    #container-2{
+      background:none!important;
+    }
+    .timer-box{
+      top: 760px; right:200px; position: absolute;
+    }
+    .timer,
+    .text{
+      color:#9e9d9f;
+    }
+    .timer{
+      font-size:60px; border-bottom:solid 1px #474647; font-family:"simhei"; 
+      margin-bottom:20px; height:70px; line-height:70px;
+      background:url(images/icon.png) 0 5px no-repeat; background-size:auto 80%; padding-left: 65px;
+    }
+    .text{
+      font-family:"arial"; font-size:30px; margin:10px 0 0 10px;
+    }
+    .text b{
+      display:inline-block; width:15px; height:15px; border-radius:50px; margin-right:8px;
+      vertical-align:middle;
+    }
+    #pc b{
+      background:#fec800; box-shadow: 0 0 2px #fec800;
+    }
+    #mobile{
+      display:none;
+    }
+    #mobile b{
+      background:#f96d24; box-shadow: 0 0 2px #f96d24;
+    }
+    #mobile,
+    #pc{display:none!important;}
+  </style>
+</head>
+<body>
+  <div class="outer">
+    <div id="container-1" class="sys"></div>
+    <div id="container-2" class="sys"></div>
+    <div class="timer-box">
+      <div id="timer" class="timer">00:00:00</div>
+      <div id="pc" class="text"><b></b>PC</div>
+      <div id="mobile" class="text"><b></b>Mobile</div>
+    </div>
+  </div>
+  
+  <script src="echarts-all-3.js"></script>
+  <script src="bubble.js"></script>
+  <script src="timer.js"></script>
+  <script src="index.js"></script>
+</body>
+</html>

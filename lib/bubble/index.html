@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>气泡随机涌现效果</title>
+  <style>
+    html{height:100%;}
+    body{
+      background:#0c0c0c; height:100%; margin:0;
+    }
+    .outer{
+      position:relative; width:1920px; height:1080px;
+    }
+    .sys{
+      width:860px; height:860px; position:absolute; left:0; top:0;
+    }
+    .sys{
+      background:url(images/bg.png) center no-repeat!important;
+      background-size:90%!important;
+    }
+    #container-1{
+      left:60px;
+    }
+    #container-2{
+      left:auto; right:60px;
+    }
+    .timer-box{
+      text-align:center; top: 800px; left:488px;
+      position: absolute; width:945px; height:0; overflow:visible;
+    }
+    .timer{
+      display:inline-block; padding:0 5px; margin-bottom:-1px; height:50px; line-height:50px;
+      color:#fff; font-size:40px; border-bottom:solid 1px #fff; margin-top:-52px;
+    }
+  </style>
+</head>
+<body>
+  <div class="outer">
+    <div id="container-1" class="sys"></div>
+    <div id="container-2" class="sys"></div>
+    <div class="timer-box">
+      <div id="timer" class="timer">00:00:00</div>
+    </div>
+  </div>
+  
+  <script src="echarts-all-3.js"></script>
+  <script src="bubble.js"></script>
+  <script src="timer.js"></script>
+  <script src="index.js"></script>
+</body>
+</html>

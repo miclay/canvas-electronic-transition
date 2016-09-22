@@ -1,0 +1,17 @@
+{
+  "name": "canvas-electronic-transition",
+  "description": "",
+  "version": "1.0.0",
+  "author": "miclay",
+  "keywords": [
+    "canvas",
+    "particle",
+    "transition",
+    "electronic"
+  ],
+  "dependencies": {},
+  "devDependencies": {
+    "finalhandler": "^0.5.0",
+    "serve-static": "^1.11.1"
+  }
+}
